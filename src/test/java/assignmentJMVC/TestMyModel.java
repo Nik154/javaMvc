@@ -1,13 +1,11 @@
 package assignmentJMVC;
 
-import org.testng.Assert;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import static org.junit.Assert.*;
 
 public class TestMyModel {
 	
 	MyModel Mod = new MyModel();
-	@Parameters("Browser")
+	
 	@Test
 	public void testAdd() {
 		assertEquals(73, Mod.addV(43, 30));
